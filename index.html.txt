@@ -1,0 +1,109 @@
+         		ISE-1
+ 
+NAME : Yash Sakkargi		
+ROLL : 49
+SUBJ.: Devops
+  
+Implement Git and GitHub/GitLab operations.
+Create a Repository
+Add the files to staging area
+Make a commit
+Perform operations Push & Pull
+Create a Branch and perform operations on branch
+Squash Commits
+
+
+LENOVO@DESKTOP-44 MINGW64 ~
+$ cd Desktop
+
+LENOVO@DESKTOP-44 MINGW64 ~/Desktop
+$ cd ISE_YASH
+
+LENOVO@DESKTOP-44 MINGW64 ~/Desktop/ISE_YASH
+$ git init
+Initialized empty Git repository in C:/Users/LENOVO/Desktop/ISE_YASH/.git/
+
+LENOVO@DESKTOP-44 MINGW64 ~/Desktop/ISE_YASH (master)
+$ git add .
+
+
+LENOVO@DESKTOP-44 MINGW64 ~/Desktop/ISE_YASH (master)
+$
+
+LENOVO@DESKTOP-44 MINGW64 ~/Desktop/ISE_YASH (master)
+$ git commit -m "First Commit"
+[master (root-commit) 9cf0db4] First Commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ise1.txt
+
+LENOVO@DESKTOP-44 MINGW64 ~/Desktop/ISE_YASH (master)
+$ touch text2
+
+LENOVO@DESKTOP-44 MINGW64 ~/Desktop/ISE_YASH (master)
+$ git add .
+
+LENOVO@DESKTOP-44 MINGW64 ~/Desktop/ISE_YASH (master)
+$ git commit -m "Second Commit"
+[master 4ff473d] Second Commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 text2
+
+LENOVO@DESKTOP-44 MINGW64 ~/Desktop/ISE_YASH (master)
+$ touch text3
+
+LENOVO@DESKTOP-44 MINGW64 ~/Desktop/ISE_YASH (master)
+$ git add .
+
+LENOVO@DESKTOP-44 MINGW64 ~/Desktop/ISE_YASH (master)
+$ git commit -m "Third Commit"
+[master d5d7f46] Third Commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 text3
+
+LENOVO@DESKTOP-44 MINGW64 ~/Desktop/ISE_YASH (master)
+$ git log
+commit d5d7f46fccfc4b1802b681ee764f69e5c32f0afb (HEAD -> master)
+Author: Vaibhav4444 <yashsakkargi@gmai.com>
+Date:   Fri Apr 22 14:58:00 2022 +0530
+
+    Third Commit
+
+commit 4ff473d17d918f534c9ace87dd0f2d811c4e6fa7
+Author: Vaibhav4444 <yashsakkargi@gmai.com>
+Date:   Fri Apr 22 14:57:32 2022 +0530
+
+    Second Commit
+
+commit 9cf0db46a1c0d9a544a2735391ddc664504aba14
+Author: Vaibhav4444 <yashsakkargi@gmai.com>
+Date:   Fri Apr 22 14:56:48 2022 +0530
+
+    First Commit
+
+LENOVO@DESKTOP-44 MINGW64 ~/Desktop/ISE_YASH (master)
+$ git remote add origin https://github.com/yashsakkargi/ISE1_49.git
+
+LENOVO@DESKTOP-44 MINGW64 ~/Desktop/ISE_YASH (master)
+$ git branch -M master
+
+LENOVO@DESKTOP-44 MINGW64 ~/Desktop/ISE_YASH (master)
+$ git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 606 bytes | 60.00 KiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/yashsakkargi/ISE1_49.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+
+Squash Commits
+
+git rebase -i HEAD~2
+Combines 2 commits
+
+
+
